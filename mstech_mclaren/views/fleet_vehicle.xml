@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
             <data>
                 <xpath expr="//field[@name='license_plate']" position="after">
-                    <field name="voucher_file_ids" widget="many2many_binary" class="oe_inline"/>
+                    <field name="license_plate_file_id" widget="many2many_binary" class="oe_inline"/>
                 </xpath>
             </data>
             </field>
