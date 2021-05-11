@@ -10,6 +10,10 @@
                 <xpath expr="//field[@name='license_plate']" position="after">
                     <field name="license_plate_file_id" widget="many2many_binary"/>
                 </xpath>
+                <xpath expr="//field[@name='company_id']" position="after">
+                    <field name="acriss"/>
+					<field name="property_card" widget="many2many_binary"/>
+                </xpath>
             </data>
             </field>
         </record>
