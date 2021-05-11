@@ -5,5 +5,5 @@ class FleetMclaren(models.Model):
     _inherit = 'fleet.vehicle'
 
     license_plate_file_id = fields.Many2many('ir.attachment', 'license_plate_file_attachments_rel',
-                                  'license_plate', 'attachment_id', string="License plate attachments",
+                                  'license_plate', 'attachment_id', string="License plate",
                                   help="Picture of the license plate of vehicle ")
