@@ -1,1 +1,1 @@
-from . import fleet_vehicule
+from . import fleet_vehicle
