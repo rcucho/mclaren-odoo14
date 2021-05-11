@@ -12,7 +12,7 @@
                 </xpath>
                 <xpath expr="//field[@name='company_id']" position="after">
                     <field name="acriss"/>
-					<field name="property_card" widget="many2many_binary"/>
+		    <field name="property_card" widget="many2many_binary"/>
                 </xpath>
             </data>
             </field>
