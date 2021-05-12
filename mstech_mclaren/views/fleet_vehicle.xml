@@ -12,7 +12,7 @@
 			<field name="property_card" widget="many2many_binary"/>
 			<field name="license_plate_file_id" widget="many2many_binary"/>
                 </xpath>
-		<xpath expr="//group[6]" position="after">
+		<xpath expr="//group[6]" position="before">
 			<group string="Poliza y Seguro">
 				<field name="insurance_company"/>
 				<field name="policy_number"/>
