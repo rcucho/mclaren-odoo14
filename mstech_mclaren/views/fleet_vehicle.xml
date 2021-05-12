@@ -18,10 +18,10 @@
 				<field name="policy_number"/>
 				<field name="policy_expiration"/>
 				<field name="policy_amount" widget="monetary"/>
-				<field name="policy_file" widget="many2many_binary"/>
+				<field name="policy_file_id" widget="many2many_binary"/>
 				<field name="soat_number"/>
 				<field name="soat_expiration"/>
-				<field name="soat_file" widget="many2many_binary"/>
+				<field name="soat_file_id" widget="many2many_binary"/>
 			</group>
 		</xpath>
             </data>
