@@ -14,7 +14,7 @@
                 </xpath>
 		<xpath expr="//group[6]" position="before">
 			<group string="Poliza y Seguro">
-				<field name="insurance_company" domain="[('category_id','=','Seguros')]" options="{'create': false, 'create_edit': false}"/>
+				<field name="insurance_company" domain="[('category_id','=','Seguros')]" options="{'no_create': True, 'no_create_edit': True}"/>
 				<field name="policy_number"/>
 				<field name="policy_expiration"/>
 				<field name="policy_amount" widget="monetary"/>
