@@ -8,10 +8,22 @@
             <field name="arch" type="xml">
             <data>
                 <xpath expr="//field[@name='company_id']" position="after">
-                    <field name="acriss"/>
-		    <field name="property_card" widget="many2many_binary"/>
-		    <field name="license_plate_file_id" widget="many2many_binary"/>
+			<field name="acriss"/>
+			<field name="property_card" widget="many2many_binary"/>
+			<field name="license_plate_file_id" widget="many2many_binary"/>
                 </xpath>
+		<xpath expr="//group[@string='Description']" position="before">
+			<group string="Poliza y Seguro">
+				<field name="insurance_company"/>
+				<field name="policy_number"/>
+				<field name="policy_expiration"/>
+				<field name="policy_amount" widget="monetary"/>
+				<field name="policy_file" widget="many2many_binary"/>
+				<field name="soat_number"/>
+				<field name="soat_expiration"/>
+				<field name="soat_file" widget="many2many_binary"/>
+			</group>
+		</xpath>
             </data>
             </field>
         </record>
