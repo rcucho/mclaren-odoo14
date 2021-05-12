@@ -14,14 +14,14 @@ class FleetMclaren(models.Model):
                               
     insurance_company = fields.Many2one('res.partner','Compañia de Seguro')
     
-    policy_number = fields.Integer(string = "Numero de Poliza")
+    policy_number = fields.Char(string = "Numero de Poliza")
     policy_expiration = fields.Date(string = "Vencimiento de Poliza")
     policy_amount = fields.Float(string = "Suma Asegurada")
     policy_file_id = fields.Many2many('ir.attachment', 'policy_file_attachments_rel',
                               'policy_number', 'attachment_id', string="Documento de poliza",
                               help="Documento de la poliza")
 
-    soat_number = fields.Integer(string = "SOAT")
+    soat_number = fields.Char(string = "SOAT")
     soat_expiration = fields.Date(string = "Vencimiento de Soat")
     soat_file_id = fields.Many2many('ir.attachment', 'soat_file_attachments_rel',
                               'soat_number', 'attachment_id', string="Documento de SOAT",
