@@ -12,17 +12,17 @@ class FleetMclaren(models.Model):
                               'property_card', 'attachment_id', string="Property card",
                               help="Documento de la tarjeta de propiedad")
                               
-    insurance_company = fields.Char(string = "Compañia de Seguros")
+    insurance_company = fields.Many2one('res.partner','Compañia de Seguro')
     
-    policy_number = fields.Char(string = "Numero de Poliza")
+    policy_number = fields.Integer(string = "Numero de Poliza")
     policy_expiration = fields.Date(string = "Vencimiento de Poliza")
     policy_amount = fields.Float(string = "Suma Asegurada")
-    policy_file = fields.Many2many('ir.attachment', 'policy_file_attachments_rel',
+    policy_file_id = fields.Many2many('ir.attachment', 'policy_file_attachments_rel',
                               'policy_number', 'attachment_id', string="Documento de poliza",
                               help="Documento de la poliza")
 
-    soat_number = fields.Char(string = "SOAT")
+    soat_number = fields.Integer(string = "SOAT")
     soat_expiration = fields.Date(string = "Vencimiento de Soat")
-    soat_file = fields.Many2many('ir.attachment', 'soat_file_attachments_rel',
+    soat_file_id = fields.Many2many('ir.attachment', 'soat_file_attachments_rel',
                               'soat_number', 'attachment_id', string="Documento de SOAT",
                               help="Documento del Soat")
