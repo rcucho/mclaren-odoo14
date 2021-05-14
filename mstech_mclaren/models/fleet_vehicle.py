@@ -36,7 +36,7 @@ class FleetMclaren(models.Model):
     upholstery = fields.Boolean(string="Tapiceria")
     equipment = fields.Many2many('equipment.vehicles', string ="Equipamentos")
     
-class Equipment_Vehicule(model.Models):
+class Equipment_Vehicule(models.Model):
     _name = 'equipment.vehicles'
     
     equipment_name = fields.Char()
