@@ -25,10 +25,10 @@
 			</group>
 		</xpath>
 	    	<xpath expr="//group[3]" position="inside">
-			<field name="model_type"  />
-			<field name="traction"  />
-			<field name="upholstery"  />
-			<field name="equipment" widget="many2many_checkboxes" domain="[('equipment_type','=',None)]" options="{'no_create_edit': True}" />
+			<field name="model_type"/>
+			<field name="traction"/>
+			<field name="upholstery"/>
+			<field name="equipment" widget="many2many_checkboxes" options="{'no_create_edit': True}"/>
 		</xpath>
             </data>
             </field>
