@@ -28,7 +28,7 @@
 			<field name="model_type"  />
 			<field name="traction"  />
 			<field name="upholstery"  />
-			<field name="equipment" domain="[('equipment_type','!=','False')]" widget="many2many_checkboxes" options="{'no_create_edit': True}" />
+			<field name="equipment" widget="many2many_checkboxes" options="{'no_create_edit': True}" />
 		</xpath>
             </data>
             </field>
