@@ -24,7 +24,7 @@
 				<field name="soat_file_id" widget="many2many_binary"/>
 			</group>
 		</xpath>
-	    	<xpath expr="//group[3]" position="inside">
+	    	<xpath expr="//group[4]" position="inside">
 			<field name="model_type"/>
 			<field name="traction"/>
 			<field name="upholstery"/>
