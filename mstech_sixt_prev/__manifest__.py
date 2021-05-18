@@ -10,8 +10,6 @@
     'depends': [
         'account_fleet',
         'sale_crm',
-        'mouse_invoice_merge',
-        'mouse_einvoice_sale',
     ],
     'data': [
         'data/sale_data.xml',
