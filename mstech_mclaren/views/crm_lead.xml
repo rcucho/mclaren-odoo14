@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="crm_lead_mstech1">
+        <record id="crm_lead_mstech1" model="ir.ui.view" >
             <field name="name">crm.lead.mstech1</field>
             <field name="model">crm.lead</field>
             <field name="inherit_id" ref="mstech_sixt_prev.crm_lead_view_form"/>
