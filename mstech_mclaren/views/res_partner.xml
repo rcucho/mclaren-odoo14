@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_res_partner_mclaren_form" model="ir.ui.view">
+            <field name="name">res.partner.mclaren.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='l10n_latam_identification_type_id']" position="attributes">
+					<attribute name="string">Documento Gaaaaa</attribute>
+                </xpath>
+            </data>
+            </field>
+        </record>
+    </data>
+</odoo>
