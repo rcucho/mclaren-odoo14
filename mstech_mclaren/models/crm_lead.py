@@ -8,6 +8,6 @@ class SaleMclaren(models.Model):
     pickup_date = fields.Datetime(string = "Fecha y Hora de Recojo")
     devoluiton_place = fields.Char(string = "Lugar de Devolucion")
     devolution_date = fields.Datetime(string = "Fecha y Hora de Devolucion")
-    type_car = fields.Char(String = "Tipo de Carro")
+    type_car = fields.Char(string = "Tipo de Carro")
     
     
