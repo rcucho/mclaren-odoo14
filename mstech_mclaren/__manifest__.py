@@ -9,7 +9,7 @@
     ],
     'data': [
         'views/fleet_vehicle.xml',
-        'views/res_partner.xml',
+        'views/crm_lead.xml',
       
     ],
     'installable' : True,
