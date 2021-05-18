@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="crm_lead_mstech1">
+            <field name="name">crm.lead.mstech1</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <xpath expr="//group[@name='alquiler_group_2']" position="after">
+                    <group name="rent_data_basic" string="Datos Basicos">
+                        <field name="pickup_place"/>
+                        <field name="pickup_date"/>
+                        <field name="devoluiton_place"/>
+                        <field name="devolution_date "/>
+                        <field name="type_car"/>
+                    </group>
+                </xpath>
+            </data>
+            </field>
+        </record>
+    </data>
+</odoo>
