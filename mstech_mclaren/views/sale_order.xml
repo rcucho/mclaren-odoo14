@@ -15,11 +15,13 @@
 			<field name="type_car"/>
                 </xpath>
     		<xpath expr="//group[@name='partner_details']" position="after">
-			<field name="user_id"/>
-			<field name="tag_ids"/>
-			<field name="team_id"/>
-			<field name="require_signature"/>
-			<field name="require_payment"/>
+			<group name="sixt_pedi">
+				<field name="user_id"/>
+				<field name="tag_ids"/>
+				<field name="team_id"/>
+				<field name="require_signature"/>
+				<field name="require_payment"/>
+			</group>
 		</xpath>
             </data>
             </field>
