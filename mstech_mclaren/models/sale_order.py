@@ -11,7 +11,7 @@ class SaleMclaren(models.Model):
     type_car = fields.Char(string="Tipo de Carro")
     
     @api.onchange('opportunity_id')
-    def _compute_oportunity_data(self):
+    def onchange_oportunity_data(self):
        
         for record in self:
             if self.opportunity_id:
