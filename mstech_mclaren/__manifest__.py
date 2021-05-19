@@ -6,6 +6,7 @@
     'depends': [
     	'fleet',
         'crm',
+        'mstech_sixt_prev',
 
     ],
     'data': [
