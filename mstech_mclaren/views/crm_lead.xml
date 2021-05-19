@@ -8,13 +8,13 @@
             <field name="arch" type="xml">
             <data>
                 <xpath expr="//group[6]" position="after">
-                 <!--   <group name="rent_data_basic" string="Datos Basicos">  -->
+                    <group name="rent_data_basic">
                         <field name="pickup_place"/>
                         <field name="pickup_date"/>
                         <field name="devoluiton_place"/>
                         <field name="devolution_date"/>
                         <field name="type_car"/>
-               <!--     </group>   -->
+                    </group>
                 </xpath>
             </data>
             </field>
