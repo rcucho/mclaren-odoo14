@@ -19,5 +19,22 @@
             </data>
             </field>
         </record>
+        <!-------------------------------------------------------------------------------->
+        <record id="crm_lead_mstech_ge" model="ir.ui.view">
+            <field name="name">crm.lead.mstech.ge</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="quick_create_opportunity_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='phone']" position="after">
+                    <field name="pickup_place"/>
+                    <field name="pickup_date"/>
+                    <field name="devoluiton_place"/>
+                    <field name="devolution_date"/>
+                    <field name="type_car"/>
+                </xpath>
+            </data>
+            </field>
+        </record>   
     </data>
 </odoo>
