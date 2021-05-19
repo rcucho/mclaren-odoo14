@@ -4,7 +4,7 @@
         <record id="crm_lead_mstech1" model="ir.ui.view">
             <field name="name">crm.lead.mstech1</field>
             <field name="model">crm.lead</field>
-            <field name="inherit_id" ref="mstech_sixt_prev.crm_lead_view_form"/>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
             <field name="arch" type="xml">
             <data>
                 <xpath expr="//group[@name='alquiler_group_2']" position="inside">
