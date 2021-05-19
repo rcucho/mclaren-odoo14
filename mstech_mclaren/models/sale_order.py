@@ -9,10 +9,10 @@ class SaleMclaren(models.Model):
     devolution_place = fields.Char(string="Lugar de Devolucion")
     devolution_date = fields.Datetime(string="Fecha de Devolucion")
     type_car = fields.Char(string="Tipo de Carro")
-    
+    process_type=fields.Selection([('nation','Nacional'),('inter','Internacional')],string='Proceso',default='nation')
+        
     @api.onchange('opportunity_id')
-    def onchange_oportunity_data(self):
-       
+    def onchange_oportunity_data(self):  
         for record in self:
             if self.opportunity_id:
                 record.pickup_place = record.opportunity_id.pickup_place
