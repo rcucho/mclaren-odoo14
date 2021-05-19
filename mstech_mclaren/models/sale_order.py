@@ -12,7 +12,7 @@ class SaleMclaren(models.Model):
     
     @api.depends('opportunity_id')
     def _compute_oportunity_data(self):
-        if opportunity_id:
+        if self.opportunity_id:
             for record in self:
                 record.pickup_place = record.opportunity_id.pickup_place
                 record.pickup_date = record.opportunity_id.pickup_date
