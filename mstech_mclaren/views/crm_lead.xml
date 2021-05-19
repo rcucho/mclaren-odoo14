@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="crm.crm_lead_view_form"/>
             <field name="arch" type="xml">
             <data>
-                <xpath expr="//field[@name='tag_ids']" position="after">
+                <xpath expr="//group[@name='alquiler_group_2']" position="inside">
                     <group name="rent_data_basic" string="Datos Basicos">
                         <field name="pickup_place"/>
                         <field name="pickup_date"/>
