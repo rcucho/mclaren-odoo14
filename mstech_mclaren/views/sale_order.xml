@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sale_order_mstech_r" model="ir.ui.view">
+            <field name="name">sale.order.mstech.r</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <xpath expr="//group[@name='order_details']" position="inside">
+					<field name="pickup_place"/>
+					<field name="pickup_date"/>
+					<field name="devolution_place"/>
+					<field name="devolution_date"/>
+					<field name="type_car"/>
+                </xpath>
+            </data>
+            </field>
+        </record>
+    </data>
+</odoo>
