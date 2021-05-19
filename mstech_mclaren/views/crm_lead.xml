@@ -12,7 +12,7 @@
                         <field name="pickup_place"/>
                         <field name="pickup_date"/>
                         <field name="devoluiton_place"/>
-                        <field name="devolution_date "/>
+                        <field name="devolution_date"/>
                         <field name="type_car"/>
                     </group>
                 </xpath>
