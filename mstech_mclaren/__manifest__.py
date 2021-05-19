@@ -12,6 +12,7 @@
     'data': [
         'views/fleet_vehicle.xml',
         'views/crm_lead.xml',
+        'views/sale_order.xml'
       
     ],
     'installable' : True,
