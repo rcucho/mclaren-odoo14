@@ -5,6 +5,7 @@
     'summary':"Mstech Mclaren",
     'depends': [
     	'fleet',
+        'crm',
 
     ],
     'data': [
