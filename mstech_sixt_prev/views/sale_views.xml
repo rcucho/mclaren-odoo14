@@ -104,7 +104,7 @@
 'default_garantia_pago': 1,
 'default_move_journal_types': ('bank', 'cash'),
 }"/>
-                    <button name="registrar_pago" string="Pago" class="btn-primary" type="object" attrs="{'invisible': [('id','=',False)]}"/>
+                    <button name="registrar_pago" string="Pago" class="btn-primary" type="object" attrs="{'invisible': [('process_bool','=',False)]}"/><!-- [('id','=',False)]}"/>-->
                     <field name="pago_ids" invisible="1"/>
                     <field name="pago_garantia" invisible="1"/>
                     <field name="pagos_totales_ids" invisible="1"/>
