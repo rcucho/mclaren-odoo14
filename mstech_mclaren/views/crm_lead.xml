@@ -19,7 +19,7 @@
             </data>
             </field>
         </record>
-        <!-------------------------------------------------------------------------------->
+        
         <record id="crm_lead_mstech_ge" model="ir.ui.view">
             <field name="name">crm.lead.mstech.ge</field>
             <field name="model">crm.lead</field>
