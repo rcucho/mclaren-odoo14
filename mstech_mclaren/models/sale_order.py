@@ -10,7 +10,7 @@ class SaleMclaren(models.Model):
     devolution_date = fields.Datetime(string="Fecha de Devolucion")
     type_car = fields.Char(string="Tipo de Carro")
     
-    @api.depends('opportunity_id')
+    @api.onchange('opportunity_id')
     def _compute_oportunity_data(self):
        
         for record in self:
