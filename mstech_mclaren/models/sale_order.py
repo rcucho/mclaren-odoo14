@@ -4,8 +4,8 @@ from odoo.exceptions import UserError
 class SaleMclaren(models.Model):
     _inherit = 'sale.order'
     
-    pickup_place = fields.Char(string="Lugar de Recojo", compute='_compute_oportunity_data', store=True)
-    pickup_date = fields.Datetime(string="Fecha de Recojo", compute='_compute_oportunity_data', store=True)
+    pickup_place = fields.Char(string="Lugar de Recojo", compute='_compute_oportunity_data')
+    pickup_date = fields.Datetime(string="Fecha de Recojo", compute='_compute_oportunity_data')
     devolution_place = fields.Char(string="Lugar de Devolucion", compute='_compute_oportunity_data', store=True)
     devolution_date = fields.Datetime(string="Fecha de Devolucion", compute='_compute_oportunity_data', store=True)
     type_car = fields.Char(string="Tipo de Carro", compute='_compute_oportunity_data', store=True)
