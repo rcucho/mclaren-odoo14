@@ -180,7 +180,9 @@ class SaleOrder(models.Model) :
     pago_garantia = fields.Boolean(string='Posee Garantía', compute='_compute_pagos_totales', store=False, readonly=True)
     pago_monto = fields.Monetary(string='Monto de Pagos Registrados', compute='_compute_pagos_totales', store=False, readonly=True)
     pagos_totales_ids = fields.Many2many(comodel_name='account.payment', string='Pagos de este contrato', compute='_compute_pagos_totales', store=False, readonly=True)
-    
+    #
+    process_type=fields.Selection([('nation','Nacional'),('inter','Internacional')],string='Proceso',default='nation')
+    #
     def _compute_pagos_totales(self) :
         for record in self :
             pagos_totales_ids = record.pago_ids
