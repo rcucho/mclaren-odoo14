@@ -8,12 +8,19 @@
             <field name="arch" type="xml">
             <data>
                 <xpath expr="//group[@name='order_details']" position="inside">
-					<field name="pickup_place"/>
-					<field name="pickup_date"/>
-					<field name="devolution_place"/>
-					<field name="devolution_date"/>
-					<field name="type_car"/>
+			<field name="pickup_place"/>
+			<field name="pickup_date"/>
+			<field name="devolution_place"/>
+			<field name="devolution_date"/>
+			<field name="type_car"/>
                 </xpath>
+    		<xpath expr="//group[@name='partner_details']" position="after">
+			<field name="user_id"/>
+			<field name="tag_ids"/>
+			<field name="team_id"/>
+			<field name="require_signature"/>
+			<field name="require_payment"/>
+		</path>
             </data>
             </field>
         </record>
