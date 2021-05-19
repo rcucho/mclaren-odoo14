@@ -98,7 +98,7 @@
             <data>
                 <xpath expr="//button[@name='action_confirm'][1]" position="after">
                     <button name="action_confirm" string="Confirmar" class="btn-primary" type="object" attrs="{'invisible': [('state','not in',['pre_aprobado'])]}"/>
-                    <button name="generar_garantia" string="Generar Garantía" class="btn-primary" type="object" attrs="{'invisible': ['|', ('state','in',['sale','don','cancel']), ('process_type','=','nation'), ('cliente_garantia_pago_id','!=',False)]}" context="{
+                    <button name="generar_garantia" string="Generar Garantía" class="btn-primary" type="object" attrs="{'invisible': [('process_type','=','nation'),'|', ('state','in',['sale','don','cancel']), ('cliente_garantia_pago_id','!=',False)]}" context="{
 'default_payment_type': 'inbound',
 'default_partner_type': 'customer',
 'default_garantia_pago': 1,
