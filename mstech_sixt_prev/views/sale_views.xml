@@ -130,6 +130,7 @@
                     <page string="Alquiler" name="alquiler_page">
                         <group name="alquiler_group_1">
                             <group name="alquiler_group_1_left" string="Cliente">
+                                <field name="process_bool"/>
                                 <field name="process_type"/>
                                 <field name="partner_name"/>
                                 <field name="partner_l10n_latam_identification_type_id" options="{'no_create': 1, 'no_open': 1}"/>
