@@ -40,7 +40,7 @@ class Equipment_Vehicule(models.Model):
     _name = 'equipment.vehicles'
     _description = "Equipamento de vehiculos"
     
-    equipment_name = fields.Char(string="nombre de equipamento")
+    #equipment_name = fields.Char(string="nombre de equipamento")
     equipment_type = fields.Selection([('equip1','Airbags'),('equip2','Bluetooth'),('equip3','Ventanas Electricas'),
         ('equip4','Pestillos Electricos'),('equip5','Camara de Retroceso'),('equip6','Sensores de Retroceso'),
         ('equip7','Encendido sin llave')])
