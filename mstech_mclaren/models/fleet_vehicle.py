@@ -34,10 +34,11 @@ class FleetMclaren(models.Model):
     traction = fields.Selection([('traction1','4x2 - Traccion Delantera'),('traction2',' 4x2 - Traccion Trasera'),
         ('traction3','4x4 - Traccion Total')], string="Traccion")
     upholstery = fields.Boolean(string="Tapiceria")
-    #equipment = fields.Many2many('equipment.vehicles','equipment_type',string ="Equipamentos")
+    equipment = fields.Many2many('equipment.vehicles','equipment_type',string ="Equipamentos")
     
 class Equipment_Vehicule(models.Model):
     _name = 'equipment.vehicles'
+    _description = "Equipamento de vehiculos"
     
     equipment_name = fields.Char(string="nombre de equipamento")
     equipment_type = fields.Selection([('equip1','Airbags'),('equip2','Bluetooth'),('equip3','Ventanas Electricas'),
