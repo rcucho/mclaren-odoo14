@@ -8,6 +8,7 @@
         'crm',
         'mstech_sixt_prev',
         'l10n_latam_base',
+        'contact'
 
     ],
     'data': [
