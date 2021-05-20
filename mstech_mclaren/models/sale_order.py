@@ -25,6 +25,20 @@ class SaleMclaren(models.Model):
                 record.devolution_place = False
                 record.devolution_date = False
                 record.type_car = False
+                
+                
+class PartnerMclaren(models.Model):
+    _inherit = 'res.partner'
+    
+    @api.onchange('l10n_latam_identification_type_id')
+    def onchange_l10n_latam_identification_type_id(self):
+        for record in self:
+            if record.company_type == 'person':
+                record.l10n_latam.identification.type.id = 1
+            else:
+                record.l10n_latam.identification.type.id = 6
+                
+                
 
 
 
