@@ -34,9 +34,9 @@ class PartnerMclaren(models.Model):
     def onchange_l10n_latam_identification_type_id(self):
         for record in self:
             if record.company_type == 'person':
-                record.l10n_latam_identification_type_id.display_name = 'DNI'
+                record.l10n_latam_identification_type_id.name = 'DNI'
             else:
-                record.l10n_latam_identification_type_id.display_name = 'RUC'
+                record.l10n_latam_identification_type_id.name = 'RUC'
                 
                 
 
